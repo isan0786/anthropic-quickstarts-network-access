@@ -92,3 +92,6 @@ find /home/computeruse -type f -not -path "/home/computeruse/.pyenv/*" -not -pat
 WARNING: EVERY TIME THE NEW CONTAINER GET'S DELETED, REPLACED or CREATED, THE ABOVE LINUX STEPS MUST BE FOLLOWED.
 
 THE PERMANENT SOLUTION WOULD BE AVAILABLE SOON FOR LINUX.
+
+## TIPS
+1. If you want to expose the application to the Internet, then replace {IP_address} with Public IP (in Step 3 for linux). Secondly, make sure to open all inbound rules for all the ports - 5900, 8501, 6080, 8080
