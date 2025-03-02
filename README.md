@@ -1,7 +1,6 @@
 # anthropic-quickstarts-network-access
 Modified version of `ghcr.io/anthropics/anthropic-quickstarts:computer-use-demo-latest` to enable network-wide access. Dynamically replaces `127.0.0.1` and `localhost` with the host machine's IP address, allowing users to connect to the application from any IP address within the same network or Public Ip address.
 
----------------------------------------------------------------------------------STEPS FOR WINDOWS----------------------------------------------------------------------------------------------------------------------------------------------------
 # Anthropic Quickstarts Network Access
 
 This repository provides a modified version of the `ghcr.io/anthropics/anthropic-quickstarts:computer-use-demo-latest` Docker image, allowing users to connect to the application from any IP address within the network.
@@ -18,6 +17,7 @@ The goal of this project is to enable users to access the application running in
 - A valid `ANTHROPIC_API_KEY`
 
 ### Installation
+---------------------------------------------------------------------------------STEPS FOR WINDOWS----------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Clone the repository:
 
