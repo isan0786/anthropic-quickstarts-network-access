@@ -33,6 +33,8 @@ docker build -t anthropic-quickstarts-modified .
 3. Run the Docker container
 
 ```
+export ANTHROPIC_API_KEY=sk-ant-api-key
+
 docker run \
     -e ANTHROPIC_API_KEY=$env:ANTHROPIC_API_KEY \
     -v $HOME/.anthropic:/home/computeruse/.anthropic \
