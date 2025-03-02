@@ -12,5 +12,3 @@ RUN chmod +x /usr/local/bin/startup.sh
 # Switch back to the original user (if needed)
 USER computeruse
 
-# Set the startup script as the entrypoint
-ENTRYPOINT ["/usr/local/bin/startup.sh"]
