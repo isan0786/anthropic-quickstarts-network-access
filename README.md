@@ -30,17 +30,32 @@ cd anthropic-quickstarts-network-access
 ```
 docker build -t anthropic-quickstarts-modified .
 ```
-3. Run the Docker container
+3. Run the Docker container. Make sure to replace YOUR_API_KEY with your actual API key and HOST_IP with the IP address of the host machine (NOT with the container IP address).
 
 ```
-export ANTHROPIC_API_KEY=sk-ant-api-key
+export ANTHROPIC_API_KEY=API_KEY
 
 docker run \
-    -e ANTHROPIC_API_KEY=$env:ANTHROPIC_API_KEY \
+    -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY \
     -v $HOME/.anthropic:/home/computeruse/.anthropic \
     -p 5900:5900 \
     -p 8501:8501 \
     -p 6080:6080 \
     -p 8080:8080 \
-    -it anthropic-quickstarts-modified
+    -it anthropic-quickstarts-modified HOST_IP
+```
+Example:
+
+```
+export ANTHROPIC_API_KEY=sk-ant-api
+
+docker run \
+    -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY \
+    -v $HOME/.anthropic:/home/computeruse/.anthropic \
+    -p 5900:5900 \
+    -p 8501:8501 \
+    -p 6080:6080 \
+    -p 8080:8080 \
+    -it anthropic-quickstarts-modified 192.168.2.34
+
 ```
